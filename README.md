@@ -53,7 +53,7 @@ The Assignment Approval APIs project provides a RESTful API for managing user as
 
 3. **Clone the repository**:
 
-   `git clone https://github.com/YourUsername/Assignment_approval_apis.git`
+   `git clone https://github.com/ManiSetharasipalli/assignment_approval_apis.git`
 
 4. **Navigate to the project directory**:
 
@@ -76,6 +76,7 @@ The Assignment Approval APIs project provides a RESTful API for managing user as
 7. **Start the application**:
 
    `npm start`
+
 - Once the server is running, you can test the user registration endpoint by sending a POST request to `http://localhost:5000/api/users/register` or the admin registration endpoint at `http://localhost:5000/api/admins/register`.
 
 
