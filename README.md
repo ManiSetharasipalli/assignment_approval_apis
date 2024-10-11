@@ -87,7 +87,7 @@ To test the API, you can use Postman or any other API testing platform. Below ar
 1. **User Registration**:  
    Send a POST request to `http://localhost:5000/api/users/register` with the following body:
 
-   ![User Registration Screenshot]("C:\Users\manis\OneDrive\Pictures\userRegistration.png")
+   ![userRegistration](https://github.com/user-attachments/assets/f95ed89e-8b89-4310-bab6-e6fbbac2b8a7)
 
 ### Example: Admin Registration Endpoint
 
