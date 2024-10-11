@@ -47,7 +47,8 @@ The Assignment Approval APIs project provides a RESTful API for managing user as
    
    You need to have Node.js installed on your machine. Download it from [nodejs.org](https://nodejs.org/) and follow the installation instructions.
 
-2. **Ensure you have MongoDB installed**:  
+2. **Ensure you have MongoDB installed**:
+   
    You need to have MongoDB installed on your machine for the database. You can download it from [mongodb.com](https://www.mongodb.com/try/download/community) and follow the i nstallation instructions. Make sure your MongoDB server is running before starting the application.
 
 3. **Clone the repository**:
@@ -72,7 +73,7 @@ The Assignment Approval APIs project provides a RESTful API for managing user as
 
 - **Important**: Ensure there are no extra spaces around the values you enter in the `.env` file. Extra spaces may cause issues in recognizing the credentials.
   
-6. **Start the application**:
+7. **Start the application**:
 
    `npm start`
 - Once the server is running, you can test the user registration endpoint by sending a POST request to `http://localhost:5000/api/users/register` or the admin registration endpoint at `http://localhost:5000/api/admins/register`.
@@ -87,32 +88,34 @@ To test the API, you can use Postman or any other API testing platform. Below ar
 1. **User Registration**:  
    Send a POST request to `http://localhost:5000/api/users/register` with the following body:
 
+
    ![userRegistration](https://github.com/user-attachments/assets/f95ed89e-8b89-4310-bab6-e6fbbac2b8a7)
+   
+2. **User Login**:
+   Send a POST request to `http://localhost:5000/api/users/login` with the following body:
 
-### Example: Admin Registration Endpoint
 
-2. **Admin Registration**:  
-   Send a POST request to `http://localhost:5000/api/admins/register` with the following body:
+   ![userLogin](https://github.com/user-attachments/assets/ed23c7fc-9dd7-4c91-8d95-1dac3dd837f3)
 
-   ![Admin Registration Screenshot](path/to/your/admin-registration-screenshot.png)
 
 ### Example: Upload Assignment
 
-3. **Upload Assignment**:  
+3. **Upload Assignment**:
+   
    After logging in, you will receive a JWT token. Send a POST request to `http://localhost:5000/api/users/upload` with the required authentication headers:
 
    - **Authorization Header**: Use the token received during login and set it as a Bearer token:
      ```
      Authorization: Bearer your_jwt_token
      ```
-
-   ![Upload Assignment Screenshot](path/to/your/upload-assignment-screenshot.png)
-
+    ![authorization](https://github.com/user-attachments/assets/1899565d-42ce-4251-ba89-f7d6e1080ccb)
+   ![upload](https://github.com/user-attachments/assets/a0376170-e4f2-463f-9c81-ff0a3105538a)
+   
 4. **Admin Registration**:  
    Send a POST request to `http://localhost:5000/api/admins/register` with the following body:
 
-   ![Admin Registration Screenshot](path/to/your/admin-registration-screenshot.png)
-  
+![adminRegistration](https://github.com/user-attachments/assets/58e33fec-8e8e-434b-96be-0f8101e191f7)  
+
 5. **Admin Accepting Assignment**:  
    Send a POST request to `http://localhost:5000/api/admins/assignments/:id/accept` with the required authentication headers:
 
@@ -121,11 +124,11 @@ To test the API, you can use Postman or any other API testing platform. Below ar
      Authorization: Bearer your_jwt_token
      ```
 
-   ![Admin Accepting Assignment Screenshot](path/to/your/admin-accepting-assignment-screenshot.png)
+   ![accept pns](https://github.com/user-attachments/assets/990932ad-870a-4959-ab34-88787b8bc845)
 
 ### Example: Admin Rejecting Assignment
 
-5. **Admin Rejecting Assignment**:  
+6. **Admin Rejecting Assignment**:  
    Send a POST request to `http://localhost:5000/api/admins/assignments/:id/reject` with the required authentication headers:
 
    - **Authorization Header**: Use the token received during admin login and set it as a Bearer token:
@@ -133,7 +136,7 @@ To test the API, you can use Postman or any other API testing platform. Below ar
      Authorization: Bearer your_jwt_token
      ```
 
-   ![Admin Rejecting Assignment Screenshot](path/to/your/admin-rejecting-assignment-screenshot.png)
+   ![reject](https://github.com/user-attachments/assets/82d6ba00-9633-4ac3-b486-7f97d4eb465c)
 
 ### Example: Admin Specific Task Accepting
 
@@ -145,11 +148,11 @@ To test the API, you can use Postman or any other API testing platform. Below ar
      Authorization: Bearer your_jwt_token
      ```
 
-   ![Admin Specific Task Accepting Screenshot](path/to/your/admin-specific-task-accepting-screenshot.png)
+   ![specificAccept](https://github.com/user-attachments/assets/6a292e7f-6fcc-454b-921b-6390cb8af657)
 
 ### Example: Admin Specific Task Rejecting
 
-7. **Admin Specific Task Rejecting**:  
+8. **Admin Specific Task Rejecting**:  
    Send a POST request to `http://localhost:5000/api/admins/assignments/:id/:task/reject` with the required authentication headers:
 
    - **Authorization Header**: Use the token received during admin login and set it as a Bearer token:
@@ -157,7 +160,7 @@ To test the API, you can use Postman or any other API testing platform. Below ar
      Authorization: Bearer your_jwt_token
      ```
 
-   ![Admin Specific Task Rejecting Screenshot](path/to/your/admin-specific-task-rejecting-screenshot.png)
+   ![specificreject](https://github.com/user-attachments/assets/84674be3-7982-464f-bde2-39fe41d793d2)
 
 These are a few screenshots demonstrating some of the key API endpoints. For the remaining functionality, please clone the repository and check the code thoroughly to explore all available endpoints.
 
