@@ -109,9 +109,14 @@ To test the API, you can use Postman or any other API testing platform. Below ar
      Authorization: Bearer your_jwt_token
      ```
     ![authorization](https://github.com/user-attachments/assets/1899565d-42ce-4251-ba89-f7d6e1080ccb)
+
+
+
    ![upload](https://github.com/user-attachments/assets/a0376170-e4f2-463f-9c81-ff0a3105538a)
+
    
-4. **Admin Registration**:  
+   
+5. **Admin Registration**:  
    Send a POST request to `http://localhost:5000/api/admins/register` with the following body:
 
 ![adminRegistration](https://github.com/user-attachments/assets/58e33fec-8e8e-434b-96be-0f8101e191f7)  
