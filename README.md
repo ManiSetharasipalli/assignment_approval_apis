@@ -19,6 +19,7 @@ The Assignment Approval APIs project provides a RESTful API for managing user as
   Retrieve a list of available admins (requires authentication).
 
 ### Admin Endpoints
+
 - **POST** `/api/admins/register`  
   Register a new admin.
 
@@ -46,6 +47,9 @@ The Assignment Approval APIs project provides a RESTful API for managing user as
    
    You need to have Node.js installed on your machine. Download it from [nodejs.org](https://nodejs.org/) and follow the installation instructions.
 
+2. **Ensure you have MongoDB installed**:  
+   You need to have MongoDB installed on your machine for the database. You can download it from [mongodb.com](https://www.mongodb.com/try/download/community) and follow the i nstallation instructions. Make sure your MongoDB server is running before starting the application.
+
 3. **Clone the repository**:
 
    `git clone https://github.com/YourUsername/Assignment_approval_apis.git`
@@ -59,18 +63,21 @@ The Assignment Approval APIs project provides a RESTful API for managing user as
    `npm install`
 
 6. **Create a `.env` file** in the root directory with the following variables:
-   `MONGODB_URI = your_mongodb_uri`
-   `JWT_SECRET = your_jwt_secret`
-   `PORT = 8000`
    
-   - To get your MongoDB URI, create a database in your MongoDB server (like MongoDB Atlas or a local instance using MongoDB Compass). Once created, copy the connection string provided by MongoDB and replace `your_mongodb_uri` with it.
+   - `MONGODB_URI = your_mongodb_uri`
+   - `JWT_SECRET = your_jwt_secret`
+   - `PORT = 8000`
+   
+- To get your MongoDB URI, create a database in your MongoDB server (like MongoDB Atlas or a local instance using MongoDB Compass). Once created, copy the connection string provided by MongoDB and replace `your_mongodb_uri` with it.
 
 - **Important**: Ensure there are no extra spaces around the values you enter in the `.env` file. Extra spaces may cause issues in recognizing the credentials.
-- 
+  
 6. **Start the application**:
 
-`npm start`
-   - Once the server is running, you can test the user registration endpoint by sending a POST request to `http://localhost:5000/api/users/register` or the admin registration endpoint at `http://localhost:5000/api/admins/register`.## Acknowledgements
+   `npm start`
+- Once the server is running, you can test the user registration endpoint by sending a POST request to `http://localhost:5000/api/users/register` or the admin registration endpoint at `http://localhost:5000/api/admins/register`.
+
+## Acknowledgements
 
   
 - [Node.js](https://nodejs.org/)
