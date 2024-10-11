@@ -117,7 +117,7 @@ To test the API, you can use Postman or any other API testing platform. Below ar
      ```
      Authorization: Bearer your_jwt_token
      ```
-     ```
+  
     ![authorization](https://github.com/user-attachments/assets/1899565d-42ce-4251-ba89-f7d6e1080ccb)
 
 
