@@ -77,6 +77,92 @@ The Assignment Approval APIs project provides a RESTful API for managing user as
    `npm start`
 - Once the server is running, you can test the user registration endpoint by sending a POST request to `http://localhost:5000/api/users/register` or the admin registration endpoint at `http://localhost:5000/api/admins/register`.
 
+
+## Testing the API
+
+To test the API, you can use Postman or any other API testing platform. Below are some screenshots demonstrating the usage of the API endpoints.
+
+### Example: User Registration Endpoint
+
+1. **User Registration**:  
+   Send a POST request to `http://localhost:5000/api/users/register` with the following body:
+
+   ![User Registration Screenshot](Screenshots\userRegistration.png)
+
+### Example: Admin Registration Endpoint
+
+2. **Admin Registration**:  
+   Send a POST request to `http://localhost:5000/api/admins/register` with the following body:
+
+   ![Admin Registration Screenshot](path/to/your/admin-registration-screenshot.png)
+
+### Example: Upload Assignment
+
+3. **Upload Assignment**:  
+   After logging in, you will receive a JWT token. Send a POST request to `http://localhost:5000/api/users/upload` with the required authentication headers:
+
+   - **Authorization Header**: Use the token received during login and set it as a Bearer token:
+     ```
+     Authorization: Bearer your_jwt_token
+     ```
+
+   ![Upload Assignment Screenshot](path/to/your/upload-assignment-screenshot.png)
+
+4. **Admin Registration**:  
+   Send a POST request to `http://localhost:5000/api/admins/register` with the following body:
+
+   ![Admin Registration Screenshot](path/to/your/admin-registration-screenshot.png)
+  
+5. **Admin Accepting Assignment**:  
+   Send a POST request to `http://localhost:5000/api/admins/assignments/:id/accept` with the required authentication headers:
+
+   - **Authorization Header**: Use the token received during admin login and set it as a Bearer token:
+     ```
+     Authorization: Bearer your_jwt_token
+     ```
+
+   ![Admin Accepting Assignment Screenshot](path/to/your/admin-accepting-assignment-screenshot.png)
+
+### Example: Admin Rejecting Assignment
+
+5. **Admin Rejecting Assignment**:  
+   Send a POST request to `http://localhost:5000/api/admins/assignments/:id/reject` with the required authentication headers:
+
+   - **Authorization Header**: Use the token received during admin login and set it as a Bearer token:
+     ```
+     Authorization: Bearer your_jwt_token
+     ```
+
+   ![Admin Rejecting Assignment Screenshot](path/to/your/admin-rejecting-assignment-screenshot.png)
+
+### Example: Admin Specific Task Accepting
+
+6. **Admin Specific Task Accepting**:  
+   Send a POST request to `http://localhost:5000/api/admins/assignments/:id/:task/accept` with the required authentication headers:
+
+   - **Authorization Header**: Use the token received during admin login and set it as a Bearer token:
+     ```
+     Authorization: Bearer your_jwt_token
+     ```
+
+   ![Admin Specific Task Accepting Screenshot](path/to/your/admin-specific-task-accepting-screenshot.png)
+
+### Example: Admin Specific Task Rejecting
+
+7. **Admin Specific Task Rejecting**:  
+   Send a POST request to `http://localhost:5000/api/admins/assignments/:id/:task/reject` with the required authentication headers:
+
+   - **Authorization Header**: Use the token received during admin login and set it as a Bearer token:
+     ```
+     Authorization: Bearer your_jwt_token
+     ```
+
+   ![Admin Specific Task Rejecting Screenshot](path/to/your/admin-specific-task-rejecting-screenshot.png)
+
+These are a few screenshots demonstrating some of the key API endpoints. For the remaining functionality, please clone the repository and check the code thoroughly to explore all available endpoints.
+
+Feel free to reach out if you have any questions or need further assistance!
+
 ## Acknowledgements
 
   
