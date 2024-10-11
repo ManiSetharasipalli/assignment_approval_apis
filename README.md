@@ -109,17 +109,21 @@ To test the API, you can use Postman or any other API testing platform. Below ar
      ```
      Authorization: Bearer your_jwt_token
      ```
+     ```
+     ```
     ![authorization](https://github.com/user-attachments/assets/1899565d-42ce-4251-ba89-f7d6e1080ccb)
 
+   ```
+   ```
 
-
-   ![upload](https://github.com/user-attachments/assets/a0376170-e4f2-463f-9c81-ff0a3105538a)
+  ![Screenshot 2024-10-11 224206](https://github.com/user-attachments/assets/28c1dec3-aad2-494d-9b86-07be40a97543)
 
    
    
 5. **Admin Registration**:  
    Send a POST request to `http://localhost:5000/api/admins/register` with the following body:
-
+```
+```
 ![adminRegistration](https://github.com/user-attachments/assets/58e33fec-8e8e-434b-96be-0f8101e191f7)  
 
 5. **Admin Accepting Assignment**:  
@@ -129,9 +133,9 @@ To test the API, you can use Postman or any other API testing platform. Below ar
      ```
      Authorization: Bearer your_jwt_token
      ```
-
-   ![accept pns](https://github.com/user-attachments/assets/990932ad-870a-4959-ab34-88787b8bc845)
-
+   
+   ![Screenshot 2024-10-11 224238](https://github.com/user-attachments/assets/eacac656-50a7-4694-a30f-797232aaf84f)
+   
 ### Example: Admin Rejecting Assignment
 
 6. **Admin Rejecting Assignment**:  
@@ -142,7 +146,7 @@ To test the API, you can use Postman or any other API testing platform. Below ar
      Authorization: Bearer your_jwt_token
      ```
 
-   ![reject](https://github.com/user-attachments/assets/82d6ba00-9633-4ac3-b486-7f97d4eb465c)
+   ![Screenshot 2024-10-11 224303](https://github.com/user-attachments/assets/1aff58c6-d4f6-4b40-98d6-78ad844d773e)
 
 ### Example: Admin Specific Task Accepting
 
@@ -154,7 +158,7 @@ To test the API, you can use Postman or any other API testing platform. Below ar
      Authorization: Bearer your_jwt_token
      ```
 
-   ![specificAccept](https://github.com/user-attachments/assets/6a292e7f-6fcc-454b-921b-6390cb8af657)
+   ![Screenshot 2024-10-11 224512](https://github.com/user-attachments/assets/36b33555-d602-4e98-b4c4-dc1b888848e6)
 
 ### Example: Admin Specific Task Rejecting
 
@@ -166,7 +170,7 @@ To test the API, you can use Postman or any other API testing platform. Below ar
      Authorization: Bearer your_jwt_token
      ```
 
-   ![specificreject](https://github.com/user-attachments/assets/84674be3-7982-464f-bde2-39fe41d793d2)
+   ![Screenshot 2024-10-11 224538](https://github.com/user-attachments/assets/3cfa9da6-a5cc-4809-a212-a2ccfbcde07e)
 
 These are a few screenshots demonstrating some of the key API endpoints. For the remaining functionality, please clone the repository and check the code thoroughly to explore all available endpoints.
 
