@@ -53,17 +53,23 @@ The Assignment Approval APIs project provides a RESTful API for managing user as
 
 3. **Clone the repository**:
 
-   `git clone https://github.com/ManiSetharasipalli/assignment_approval_apis.git`
+   ```
+      git clone https://github.com/ManiSetharasipalli/assignment_approval_apis.git
+   ```
 
-4. **Navigate to the project directory**:
+5. **Navigate to the project directory**:
 
-   `cd Assignment_approval_apis`
+   ```
+   cd Assignment_approval_apis
+   ```
 
-5. **Install dependencies**:
+7. **Install dependencies**:
 
-   `npm install`
+   ```
+   npm install
+   ```
 
-6. **Create a `.env` file** in the root directory with the following variables:
+9. **Create a `.env` file** in the root directory with the following variables:
    
    - `MONGODB_URI = your_mongodb_uri`
    - `JWT_SECRET = your_jwt_secret`
@@ -75,7 +81,9 @@ The Assignment Approval APIs project provides a RESTful API for managing user as
   
 7. **Start the application**:
 
-   `npm start`
+   ```
+   npm start
+   ```
 
 - Once the server is running, you can test the user registration endpoint by sending a POST request to `http://localhost:5000/api/users/register` or the admin registration endpoint at `http://localhost:5000/api/admins/register`.
 
@@ -110,11 +118,8 @@ To test the API, you can use Postman or any other API testing platform. Below ar
      Authorization: Bearer your_jwt_token
      ```
      ```
-     ```
     ![authorization](https://github.com/user-attachments/assets/1899565d-42ce-4251-ba89-f7d6e1080ccb)
 
-   ```
-   ```
 
   ![Screenshot 2024-10-11 224206](https://github.com/user-attachments/assets/28c1dec3-aad2-494d-9b86-07be40a97543)
 
@@ -122,9 +127,8 @@ To test the API, you can use Postman or any other API testing platform. Below ar
    
 5. **Admin Registration**:  
    Send a POST request to `http://localhost:5000/api/admins/register` with the following body:
-```
-```
-![adminRegistration](https://github.com/user-attachments/assets/58e33fec-8e8e-434b-96be-0f8101e191f7)  
+
+![Screenshot 2024-10-11 225317](https://github.com/user-attachments/assets/9736496a-b3c7-46f7-baaa-edac145984f4)  
 
 5. **Admin Accepting Assignment**:  
    Send a POST request to `http://localhost:5000/api/admins/assignments/:id/accept` with the required authentication headers:
